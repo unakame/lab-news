@@ -50,7 +50,7 @@ $breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
 
 }
 
-hr{
+.hr1{
  height: 3px;
  background-color: #EFEFEF;
  border: none;
@@ -101,6 +101,7 @@ hr{
   background-color: $gray;
   height: 50px;
   color: #fff;
+  margin-bottom: 30px;
 }
 .que{
   background-image: url('../img/news/news-1.png');
@@ -125,4 +126,41 @@ hr{
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
+}
+
+/* section mundo*/
+.mundo-{
+  @extend .margin-body;
+}
+
+.mundo{
+  margin-left:13px;
+  margin-top: 30px;
+}
+
+.hrm{
+  height: 3px;
+  background-color: $yellow;
+  border: none;
+  margin-top: 10px;
+  width: 3%;
+  margin-left: 13px;
+}
+
+.news-4{
+    margin-left: 28px;
+    background-image: url('../img/news/news-4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.news-7{
+  background-image: url('../img/news/news-7.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-left: -80px;
 }

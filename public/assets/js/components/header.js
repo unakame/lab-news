@@ -13,7 +13,7 @@ const Header = () => {
   const imgFB       = $('<img>',{src:'assets/img/fb.png'});
   const imgT        = $('<img>',{src:'assets/img/tw.png'});
   const imgLI       = $('<img>',{src:'assets/img/in.png'});
-  const hr          = $('<hr>');
+  const hr          = $('<hr class="hr1">');
   const divLab      = $('<div>');
   const imgLab      = $('<img>',{src:'assets/img/logoicon.png', style:'display: block; margin: 0 auto;'});
   const divTe       = $('<div>',{class:'div-te'});
@@ -25,7 +25,7 @@ const Header = () => {
   const imgHead     = $('<div class="row container-img">  <div class="col-md-6 que">    </div><div class="col-md-3 build">  </div><div class="col-md-3 three">  </div></div>');
 
   const imgTe       = $('<div class="row container-color">  <div class="col-md-6"> El método de la Universidad de Stanford para mejorar las calificaciones</div><div class="col-md-3">Estas son las mejores tech startups del mundo  </div><div class="col-md-3">Voluntarios por la educación, la combinación perfecta  </div></div>');
-  const sectionMundo = $('<section><p>MUNDO</p></section>');
+
 
 
 
@@ -37,7 +37,6 @@ const Header = () => {
  header.append(divChair);
  header.append(imgHead);
  header.append(imgTe);
- header.after(sectionMundo);
 
  ul.append(li1);
  ul.append(li2);
