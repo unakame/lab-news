@@ -19,11 +19,25 @@ const Header = () => {
   const divTe       = $('<div>',{class:'div-te'});
   const date        = $('<span>Lunes Junio 12 de 2017  |  <img src="assets/img/cloud.png"> 22°</span>');
   const ul2         = $('<ul>',{class:'content-1 ul2'});
-  const lists         =$('<li>Lo último</li><li>Opinión</li><li>Cultura</li><li>Perú</li><li>Tecnología</li><li>Mundo</li><li>Economía</li><li>Lifestyle</li><li>Deporte</li>')
+  const lists       = $('<li>Lo último</li><li>Opinión</li><li>Cultura</li><li>Perú</li><li>Tecnología</li><li>Mundo</li><li>Economía</li><li>Lifestyle</li><li>Deporte</li>');
+  const divChair    = $('<div class="content-chair"><span>MIT BUSCA ESTUDIANTES DE TODO EL MUNDO QUE QUIERAN ESTUDIAR GRATIS</span><p>Ya no será necesario ir hasta el campus de MIT para estudiar allá, por medio de su curso gratuito en línea cualquiera podrá hacerlo</p></div>');
+
+  const imgHead     = $('<div class="row container-img">  <div class="col-md-6 que">    </div><div class="col-md-3 build">  </div><div class="col-md-3 three">  </div></div>');
+
+  const imgTe       = $('<div class="row container-color">  <div class="col-md-6"> El método de la Universidad de Stanford para mejorar las calificaciones</div><div class="col-md-3">Estas son las mejores tech startups del mundo  </div><div class="col-md-3">Voluntarios por la educación, la combinación perfecta  </div></div>');
+  const sectionMundo = $('<section><p>MUNDO</p></section>');
+
+
+
+
 
  header.append(ul);
  header.append(divLab);
  header.append(ul2);
+ header.append(divChair);
+ header.append(imgHead);
+ header.append(imgTe);
+ header.after(sectionMundo);
 
  ul.append(li1);
  ul.append(li2);
@@ -41,6 +55,10 @@ const Header = () => {
  divTe.append(date);
  divLab.append(divTe);
  ul2.append(lists);
+
+
+
+
 
 
  return header;
