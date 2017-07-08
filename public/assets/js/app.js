@@ -9,6 +9,7 @@ const render = (root) => {
   wrapper.append(Edu());
   wrapper.append(Carousel());
   wrapper.append(Opinion());
+  wrapper.append(Footer());
 
 
 
