@@ -80,6 +80,7 @@ $gray:   #2b2b2b;
 .que{
   background-image: url('../img/news/news-1.png');
   height: 400px;
+  @extend .position;
   margin-right: 0;
 }
 

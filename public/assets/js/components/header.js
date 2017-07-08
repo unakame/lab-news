@@ -24,7 +24,7 @@ const Header = () => {
 
   const imgHead     = $('<div class="row container-img">  <div class="col-md-6 que">    </div><div class="col-md-3 build">  </div><div class="col-md-3 three">  </div></div>');
 
-  const imgTe       = $('<div class="row container-color">  <div class="col-md-6"> El método de la Universidad de Stanford para mejorar las calificaciones</div><div class="col-md-3">Estas son las mejores tech startups del mundo  </div><div class="col-md-3">Voluntarios por la educación, la combinación perfecta  </div></div>');
+  const imgTe       = $('<div class="row container-color">  <div class="col-md-6"> El método de la  <p style="color:#F7B617;">Universidad de Stanford<p> para mejorar las calificaciones</div><div class="col-md-3">Estas son las mejores <p style="color:#F7B617;">tech startups<p> del mundo  </div><div class="col-md-3">Voluntarios por la educación, la combinación perfecta  </div></div>');
 
 
 
