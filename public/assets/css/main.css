@@ -237,10 +237,15 @@
   color: #fff; }
 
 footer {
+  margin-top: 40px;
   background-color: #F7B617;
   height: 300px;
   margin-left: 80px;
   margin-right: 35px;
   color: #fff; }
+
+#myCarousel {
+  margin-left: 80px;
+  margin-right: 35px; }
 
 /*# sourceMappingURL=main.css.map */

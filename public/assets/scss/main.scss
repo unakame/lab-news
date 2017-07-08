@@ -327,9 +327,15 @@ $gray:   #2b2b2b;
 }
 
 footer{
+  margin-top: 40px;
   background-color: $yellow;
   height: 300px;
   margin-left: 80px;
   margin-right: 35px;
   color: #fff;
+}
+
+#myCarousel{
+  margin-left: 80px;
+  margin-right: 35px;
 }
