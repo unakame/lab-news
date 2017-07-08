@@ -6,7 +6,8 @@ const render = (root) => {
   wrapper.append(Header());
   wrapper.append(Mundo());
   wrapper.append(Tec());
-
+  wrapper.append(Edu());
+  wrapper.append(Carousel());
 
 
 
