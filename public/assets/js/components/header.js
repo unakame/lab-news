@@ -17,7 +17,7 @@ const Header = () => {
   const divLab      = $('<div>');
   const imgLab      = $('<img>',{src:'assets/img/logoicon.png', style:'display: block; margin: 0 auto;'});
   const divTe       = $('<div>',{class:'div-te'});
-  const date        = $('<span>Lunes Junio 12 de 2017  |  <img src="assets/img/cloud.png"> 22°</span>');
+  const date        = $('<span class="hidden-xs">Lunes Junio 12 de 2017  |  <img src="assets/img/cloud.png"> 22°</span>');
   const ul2         = $('<ul>',{class:'content-1 ul2  hidden-xs'});
   const lists       = $('<li>Lo último</li><li>Opinión</li><li>Cultura</li><li>Perú</li><li>Tecnología</li><li>Mundo</li><li>Economía</li><li>Lifestyle</li><li>Deporte</li>');
   const divChair    = $('<div class="content-chair"><span>MIT BUSCA ESTUDIANTES DE TODO EL MUNDO QUE QUIERAN ESTUDIAR GRATIS</span><p>Ya no será necesario ir hasta el campus de MIT para estudiar allá, por medio de su curso gratuito en línea cualquiera podrá hacerlo</p></div>');
