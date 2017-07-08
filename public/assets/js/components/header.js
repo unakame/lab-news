@@ -2,7 +2,7 @@
 
 const Header = () => {
   const header      = $('<header></header>',{class:'col-lg-12'});
-  const ul          = $('<ul>',{class:'content-1'});
+  const ul          = $('<ul>',{class:'content-1  hidden-xs'});
   const li1         = $('<li></li>');
   const img1        = $('<img>',{src:'assets/img/menu.png'});
   const p1          = $('<span>SECTIONS</span>');
