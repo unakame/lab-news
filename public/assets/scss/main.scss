@@ -2,25 +2,6 @@
 $yellow: #F7B617;
 $gray:   #2b2b2b;
 
-$columns : 12;
-$column-width : 100%/$columns;
-$breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
-@function column-width($column){
-  @return $column-width*$column;
-}
-@mixin column($media, $min-width){
-  @media (min-width:$min-width){
-    @for $i from 1 through $columns {
-      .column-#{$media}-#{$i} {
-        width: column-width($i);
-      }
-    }
-  }
-}
-@each $name, $width in $breakpoints {
-  @include column($name, $width);
-}
-
 *{
   font-family: 'Montserrat';
   margin: 0;
@@ -69,28 +50,21 @@ $breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
     color: #fff;
     padding: 35px;
     vertical-align: middle;
-
   }
 }
 
 .content-chair{
   background-image: url('../img/news/news-0.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @extend .position;
   margin-top: 0;
   height: 400px;
-
-
   @extend .margin-body;
   color: #fff;
-
   span{
     font-size: 30px;
     padding-top: 300px;
     vertical-align: bottom;
   }
-
 }
 .container-img{
   @extend .margin-body;
@@ -105,26 +79,20 @@ $breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
 }
 .que{
   background-image: url('../img/news/news-1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @extend .margin-body;
   height: 400px;
   margin-right: 0;
 }
 
 .build{
   background-image: url('../img/news/news-2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @extend .position;
   height: 400px;
 }
 
 .three{
     background-image: url('../img/news/news-3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @extend .position;
     height: 400px;
 }
 
@@ -328,5 +296,33 @@ $breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
 .container-color-m-7{
   background-color: $gray;
   margin-top: 29.5%;
+  color: #fff;
+}
+
+.news-24{
+  @extend .position;
+  background-image: url('../img/news/news-24.png');
+  height: 400px;
+}
+
+.news-25{
+  @extend .position;
+  background-image: url('../img/news/news-25.png');
+  height: 400px;
+}
+.news-26{
+  @extend .position;
+  background-image: url('../img/news/news-26.png');
+  height: 400px;
+}
+.news-27{
+  @extend .position;
+  background-image: url('../img/news/news-27.png');
+  height: 400px;
+}
+
+.container-color-m-8{
+  background-color: $gray;
+  margin-top: 148%;
   color: #fff;
 }
